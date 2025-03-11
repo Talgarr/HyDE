@@ -10,4 +10,6 @@ Font_NotoSansCJK|/usr/local/share/fonts
 Cursor_BibataIce|/usr/local/share/icons
 Cursor_BibataIce|$HOME/.local/share/icons
 Gtk_Wallbash|$HOME/.local/share/themes
+Gtk_SweetRainbow|$HOME/.local/share/themes
 Icon_Wallbash|$HOME/.local/share/icons
+Icon_Candy|$HOME/.local/share/icons
