@@ -283,14 +283,17 @@ if [ ${flg_Service} -eq 1 ]; then
 EOF
 
     while read -r serviceChk; do
+        if [[ "${file##*.}" != "socket" ]]; then
+            serviceChk="$serviceChk.service"
+        fi
 
-        if [[ $(systemctl list-units --all -t service --full --no-legend "${serviceChk}.service" | sed 's/^\s*//g' | cut -f1 -d' ') == "${serviceChk}.service" ]]; then
+        if [[ $(systemctl list-units --all -t service --full --no-legend "${serviceChk}" | sed 's/^\s*//g' | cut -f1 -d' ') == "${serviceChk}" ]]; then
             print_log -y "[skip] " -b "active " "Service ${serviceChk}"
         else
             print_log -y "start" "Service ${serviceChk}"
             if [ $flg_DryRun -ne 1 ]; then
-                sudo systemctl enable "${serviceChk}.service"
-                sudo systemctl start "${serviceChk}.service"
+                sudo systemctl enable "${serviceChk}"
+                sudo systemctl start "${serviceChk}"
             fi
         fi
 
