@@ -1,0 +1,121 @@
+# --------------------------------------------------- // System
+gtrash                                                 # cli to manage trash files
+wttrbar                                                # for weather
+python-requests|wttrbar                                # script dependency
+ddcui                                                  # GUI to control brightness for external monitors
+btop
+partitionmanager
+auto-cpufreq
+
+# --------------------------------------------------- // Misc
+xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
+huiontablet
+
+# --------------------------------------------------- // Gaming
+steam                                                  # gaming platform
+gamemode                                               # daemon and library for game optimizations
+mangohud                                               # system performance overlay
+
+# --------------------------------------------------- // Media
+cava                                                   # audio visualizer
+spotify                                                # proprietary music streaming service
+spicetify-cli                                          # cli to customize spotify client
+vlc
+jellyfin-media-player
+
+# --------------------------------------------------- // Neovim
+gcc|neovim
+make|neovim
+git|neovim
+ripgrep|neovim
+fd|neovim
+unzip|neovim
+neovim                                                 # vim based text editor
+
+texlive-full                                           # Latex
+zathura
+
+# --------------------------------------------------- // Shell
+oh-my-zsh-git|zsh                                      # Optional plugin manager for zsh
+pokemon-colorscripts-git|zsh                           # display pokemon sprites (optional)
+
+# --------------------------------------------------- // Backends
+electron                                              # electron backend
+docker
+docker-compose
+
+# --------------------------------------------------- // Lockscreen
+swaylock-effects                                        # swaylock with effects // very minimal lockscreen
+
+# --------------------------------------------------- // OSD
+swayosd-git                                             #A GTK based on screen display for keyboard shortcuts like caps-lock and volume
+
+# --------------------------------------------------- // Browser
+google-chrome
+
+# --------------------------------------------------- // Power management
+
+
+# --------------------------------------------------- // Security
+yubikey-manager                                       # Yubikey
+yubikey-full-disk-encryption 
+pam-u2f
+
+libfprint                                             # Fingerprint
+libpam-fprintd 
+fprintd
+
+wireguard-tools                                       # VPN
+openvpn
+proton-vpn-gtk-app
+
+bitwarden
+
+# --------------------------------------------------- // Cloud CLI
+aws-cli
+azure-cli
+google-cloud-cli
+github-cli
+
+# --------------------------------------------------- // 
+gimp
+obs-studio
+kdenlive
+darktable 
+freecad
+
+# 
+vesktop 
+obsidian
+slack-desktop
+nextcloud-client
+
+dbeaver
+remmina
+postman
+
+# --------------------------------------------------- // Languages
+gcc 
+clang 
+cmake 
+go 
+jdk21-openjdk 
+python 
+rustup 
+ruby 
+lua 
+nasm 
+perl
+
+# --------------------------------------------------- // IDE
+pycharm-professional 
+intellij-idea-ultimate-edition 
+clion 
+webstorm 
+goland 
+rustrover 
+# code                                                   # VS Code 
+
+# --------------------------------------------------- // Red Team
+hashcat 
+seclists
