@@ -6,6 +6,7 @@ ddcui                                                  # GUI to control brightne
 btop
 partitionmanager
 auto-cpufreq
+tldr
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -114,8 +115,10 @@ clion
 webstorm 
 goland 
 rustrover 
-# code                                                   # VS Code 
+# code                                                   # VS Code
+android-studio
 
-# --------------------------------------------------- // Red Team
+# --------------------------------------------------- // Red Team - CTF
 hashcat 
 seclists
+
