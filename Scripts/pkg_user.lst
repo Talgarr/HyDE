@@ -7,6 +7,9 @@ btop
 partitionmanager
 auto-cpufreq
 tldr
+incus
+wluma
+tmux
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -84,12 +87,13 @@ obs-studio
 kdenlive
 darktable 
 freecad
+cura-bin
 
-# 
 vesktop 
 obsidian
 slack-desktop
 nextcloud-client
+zoom
 
 dbeaver
 remmina
@@ -119,6 +123,19 @@ rustrover
 android-studio
 
 # --------------------------------------------------- // Red Team - CTF
-hashcat 
-seclists
-
+# Blackarch maybe...
+impacket
+smbmap
+perl-image-exiftool
+wireshark-qt
+tcpdump
+binwalk
+android-apktool
+android-tools
+sqlmap
+strace
+readelf
+metasploit
+ghidra
+zaproxy
+nmap
