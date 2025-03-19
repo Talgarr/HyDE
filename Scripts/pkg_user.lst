@@ -67,7 +67,6 @@ yubikey-full-disk-encryption
 pam-u2f
 
 libfprint                                             # Fingerprint
-fprintd 
 fprintd
 
 wireguard-tools                                       # VPN
