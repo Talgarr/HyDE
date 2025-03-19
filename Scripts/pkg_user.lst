@@ -28,13 +28,14 @@ vlc
 jellyfin-media-player
 
 # --------------------------------------------------- // Neovim
+neovim
 gcc|neovim
 make|neovim
 git|neovim
 ripgrep|neovim
 fd|neovim
 unzip|neovim
-neovim                                                 # vim based text editor
+                                              # vim based text editor
 
 texlive-full                                           # Latex
 zathura
