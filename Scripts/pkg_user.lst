@@ -66,7 +66,7 @@ yubikey-full-disk-encryption
 pam-u2f
 
 libfprint                                             # Fingerprint
-libpam-fprintd 
+fprintd 
 fprintd
 
 wireguard-tools                                       # VPN
@@ -97,7 +97,7 @@ zoom
 
 dbeaver
 remmina
-postman
+postman-bin
 
 # --------------------------------------------------- // Languages
 gcc 
@@ -134,7 +134,6 @@ android-apktool
 android-tools
 sqlmap
 strace
-readelf
 metasploit
 ghidra
 zaproxy
