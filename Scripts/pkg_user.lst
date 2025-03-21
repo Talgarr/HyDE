@@ -1,7 +1,7 @@
 # --------------------------------------------------- // System
 gtrash                                                 # cli to manage trash files
-wttrbar                                                # for weather
-python-requests|wttrbar                                # script dependency
+# wttrbar                                                # for weather
+# python-requests|wttrbar                                # script dependency
 ddcui                                                  # GUI to control brightness for external monitors
 btop
 partitionmanager
@@ -48,6 +48,8 @@ pokemon-colorscripts-git|zsh                           # display pokemon sprites
 electron                                              # electron backend
 docker
 docker-compose
+virt-manager
+qemu-full
 
 # --------------------------------------------------- // Lockscreen
 swaylock-effects                                        # swaylock with effects // very minimal lockscreen
@@ -111,6 +113,7 @@ ruby
 lua 
 nasm 
 perl
+npm
 
 # --------------------------------------------------- // IDE
 pycharm-professional 

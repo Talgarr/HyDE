@@ -4,11 +4,13 @@
 #|-/ /--| Sébastien Graveline                  |-/ /--|#
 #|/ /---+--------------------------------------+/ /---|#
 
+rustup default stable
+
 # nvim config
-git clone git@github.com:Talgarr/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/Talgarr/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 # Default kitty
-update-alternatives --config x-terminal-emulator
+# update-alternatives --config x-terminal-emulator
 
 # PDF google chrome
 xdg-mime default google-chrome.desktop application/pdf
