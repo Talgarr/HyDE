@@ -21,4 +21,5 @@ git config --global user.email "graveline.seb@gmail.com"
 git config --global user.name "Sebastien Graveline"
 git config --global core.editor "nvim"
 git config --global gpg.format ssh
+git config --global commit.gpgSign true
 git config --global user.signingkey ~/.ssh/id_ed25519_sk.pub
