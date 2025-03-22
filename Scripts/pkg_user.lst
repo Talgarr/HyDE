@@ -35,6 +35,7 @@ git|neovim
 ripgrep|neovim
 fd|neovim
 unzip|neovim
+lazygit|neovim
                                               # vim based text editor
 
 texlive-full                                           # Latex
