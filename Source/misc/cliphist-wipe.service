@@ -1,0 +1,11 @@
+[Unit]
+Description=Wipe clipboard history on logout and login
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/cliphist wipe
+ExecStop=/usr/bin/cliphist wipe
+
+[Install]
+WantedBy=default.target

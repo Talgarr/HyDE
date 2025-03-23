@@ -5,7 +5,6 @@ gtrash                                                 # cli to manage trash fil
 ddcui                                                  # GUI to control brightness for external monitors
 btop
 partitionmanager
-auto-cpufreq
 tldr
 incus
 wluma
@@ -62,7 +61,8 @@ swayosd-git                                             #A GTK based on screen d
 google-chrome
 
 # --------------------------------------------------- // Power management
-
+auto-cpufreq
+thermald|auto-cpufreq
 
 # --------------------------------------------------- // Security
 yubikey-manager                                       # Yubikey
