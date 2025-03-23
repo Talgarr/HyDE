@@ -1,11 +1,9 @@
 NetworkManager
 bluetooth
 sddm
-
 wluma
 sshd
 libvirtd
 auto-cpufreq
-
 incus.socket
 docker.socket

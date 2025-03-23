@@ -3,6 +3,9 @@
 #|--/ /-| Script to install custom config      |--/ /-|#
 #|-/ /--| Sébastien Graveline                  |-/ /--|#
 #|/ /---+--------------------------------------+/ /---|#
+scrDir="$(dirname "$(realpath "$0")")"
+source "${scrDir}/../Configs/.local/lib/hyde/globalcontrol.sh"
+
 
 echo "Set rustup to default"
 rustup default stable
@@ -50,3 +53,17 @@ mkdir -p "$HOME/.config/systemd/user/"
 cp ../Source/misc/cliphist-wipe.service "$HOME/.config/systemd/user/"
 systemctl --user enable cliphist-wipe.service
 systemctl --user start cliphist-wipe.service
+
+
+echo "SDDM config"
+sddm_theme="$(get_hyprConf "SDDM_THEME")"
+if [ -f "/etc/sddm.conf.d/the_hyde_project.conf" ]; then
+    sudo cp "/etc/sddm.conf.d/the_hyde_project.conf" "/etc/sddm.conf.d/backup_the_hyde_project.conf"
+fi
+if [ ! -z "$sddm_theme" ]; then
+    if [ -f "/usr/share/sddm/themes/$sddm_theme/the_hyde_project.conf" ]; then 
+        sudo cp "/usr/share/sddm/themes/$sddm_theme/the_hyde_project.conf" "/etc/sddm.conf.d/the_hyde_project.conf"
+    fi
+else
+    sudo cp "/usr/share/sddm/themes/Candy/the_hyde_project.conf" "/etc/sddm.conf.d/the_hyde_project.conf"
+fi
