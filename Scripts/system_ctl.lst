@@ -1,7 +1,6 @@
 NetworkManager
 bluetooth
 sddm
-wluma
 sshd
 libvirtd
 auto-cpufreq

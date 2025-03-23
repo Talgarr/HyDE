@@ -67,3 +67,21 @@ if [ ! -z "$sddm_theme" ]; then
 else
     sudo cp "/usr/share/sddm/themes/Candy/the_hyde_project.conf" "/etc/sddm.conf.d/the_hyde_project.conf"
 fi
+
+
+echo "Add Fingerprint"
+if ! fprintd-list talgarr | grep '#0' -q; then
+    fprintd-enroll
+else
+    echo "Fingerprint already enrolled"
+fi
+if ! grep -q -E 'auth\s+sufficient\s+pam_fprintd.so' /etc/pam.d/sddm; then
+    sudo sed -i "2i auth 			[success=1 new_authtok_reqd=1 default=ignore]  	pam_unix.so try_first_pass likeauth nullok\nauth 			sufficient  	pam_fprintd.so" /etc/pam.d/sddm
+fi
+if ! grep -q -E 'auth\s+sufficient\s+pam_fprintd.so' /etc/pam.d/system-local-login; then
+    sudo sed -i "2i auth      sufficient pam_fprintd.so" /etc/pam.d/system-local-login
+fi
+if ! grep -q -E 'auth\s+sufficient\s+pam_fprintd.so' /etc/pam.d/sudo; then
+    sudo sed -i "2i auth      sufficient pam_fprintd.so" /etc/pam.d/sudo
+fi
+
