@@ -11,6 +11,7 @@ general {
     no_fade_in = false
     grace = 0
     disable_loading_bar = true
+    ignore_empty_input = true
 }
 
 # BACKGROUND
