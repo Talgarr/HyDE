@@ -72,6 +72,7 @@ fi
 echo "Add Fingerprint"
 if ! fprintd-list talgarr | grep '#0' -q; then
     fprintd-enroll
+    fprintd-enroll -f right-thumb
 else
     echo "Fingerprint already enrolled"
 fi
