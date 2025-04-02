@@ -3,12 +3,19 @@ gtrash                                                 # cli to manage trash fil
 # wttrbar                                                # for weather
 # python-requests|wttrbar                                # script dependency
 ddcui                                                  # GUI to control brightness for external monitors
+acpi
 btop
 partitionmanager
 tldr
 incus
+incus-ui|incus
+distrobuilder
+hivex|distrobuilder
+wimlib|distrobuilder
+cdrtools|distrobuilder
 wluma
 tmux
+fzf
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -87,6 +94,7 @@ github-cli
 # --------------------------------------------------- // 
 gimp
 obs-studio
+v4l2loopback-dkms|obs-studio
 kdenlive
 darktable 
 freecad
@@ -115,6 +123,7 @@ lua
 nasm 
 perl
 npm
+php
 
 # --------------------------------------------------- // IDE
 pycharm-professional 
@@ -140,5 +149,13 @@ sqlmap
 strace
 metasploit
 ghidra
+ida-free
 zaproxy
+caido-desktop
 nmap
+seclists
+pwninit
+pwntools
+sqlmap
+bind
+ffuf

@@ -85,3 +85,14 @@ if ! grep -q -E 'auth\s+sufficient\s+pam_fprintd.so' /etc/pam.d/sudo; then
     sudo sed -i "2i auth      sufficient pam_fprintd.so" /etc/pam.d/sudo
 fi
 
+
+echo "Add udev for thunderbolt devices"
+sudo cp "${scrDir}/../Source/misc/99-removable.rules" "/etc/udev/rules.d/99-removable.rules"
+
+echo "Set incus"
+sudo usermod -v 1000000-1000999999 -w 1000000-1000999999 root
+sudo incus config set core.https_address=127.0.0.1:8443
+
+echo "Set hibernation conf"
+sudo mkdir /etc/systemd/sleep.conf.d
+sudo cp "${scrDir}/../Source/misc/sleep.conf" /etc/systemd/sleep.conf.d/

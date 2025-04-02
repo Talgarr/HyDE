@@ -4,5 +4,5 @@ sddm
 sshd
 libvirtd
 auto-cpufreq
-incus.socket
-docker.socket
+incus
+incus-user
