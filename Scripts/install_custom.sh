@@ -97,3 +97,6 @@ sudo incus config set core.https_address=127.0.0.1:8443
 echo "Set hibernation conf"
 sudo mkdir /etc/systemd/sleep.conf.d
 sudo cp "${scrDir}/../Source/misc/sleep.conf" /etc/systemd/sleep.conf.d/
+
+echo "Add thunderbolt to early module loading. You need to sudo mkinitcpio -P"
+sudo sed -i 's/\(MODULES=(.*\))/\1 thunderbolt)/' /etc/mkinitcpio.conf

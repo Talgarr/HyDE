@@ -13,9 +13,10 @@ distrobuilder
 hivex|distrobuilder
 wimlib|distrobuilder
 cdrtools|distrobuilder
-wluma
 tmux
 fzf
+bat
+bolt
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -23,6 +24,7 @@ huiontablet
 
 # --------------------------------------------------- // Gaming
 steam                                                  # gaming platform
+lib32-nvidia-utils|steam
 gamemode                                               # daemon and library for game optimizations
 mangohud                                               # system performance overlay
 
@@ -42,7 +44,6 @@ ripgrep|neovim
 fd|neovim
 unzip|neovim
 lazygit|neovim
-                                              # vim based text editor
 
 texlive-full                                           # Latex
 zathura
