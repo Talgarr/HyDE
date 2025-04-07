@@ -118,6 +118,7 @@ cmake
 go 
 jdk21-openjdk 
 python 
+uv
 rustup 
 ruby 
 lua 
