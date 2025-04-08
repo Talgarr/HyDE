@@ -9,6 +9,8 @@ partitionmanager
 tldr
 incus
 incus-ui|incus
+umoci|incus
+skopeo|incus
 distrobuilder
 hivex|distrobuilder
 wimlib|distrobuilder
@@ -54,9 +56,9 @@ pokemon-colorscripts-git|zsh                           # display pokemon sprites
 
 # --------------------------------------------------- // Backends
 electron                                              # electron backend
-docker
-docker-compose
-virt-manager
+# docker
+# docker-compose
+# virt-manager
 qemu-full
 
 # --------------------------------------------------- // Lockscreen
@@ -162,3 +164,4 @@ pwntools
 sqlmap
 bind
 ffuf
+ngrok

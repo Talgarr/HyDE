@@ -14,3 +14,4 @@ alias icat='kitten icat'
 #  This is your file 
 # Add your configurations here
 export EDITOR="nvim"
+export PATH=$PATH:"/home/talgarr/go/bin/"

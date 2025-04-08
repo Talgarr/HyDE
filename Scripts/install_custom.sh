@@ -45,9 +45,6 @@ echo "Setup power management"
 # power management
 sudo auto-cpufreq --install
 
-echo "Add env variable"
-echo 'export EDITOR="nvim"' >> ~/.zshrc
-
 echo "Add wipe hist service"
 mkdir -p "$HOME/.config/systemd/user/"
 cp ../Source/misc/cliphist-wipe.service "$HOME/.config/systemd/user/"
@@ -92,7 +89,8 @@ sudo cp "${scrDir}/../Source/misc/99-removable.rules" "/etc/udev/rules.d/99-remo
 
 echo "Set incus"
 sudo usermod -v 1000000-1000999999 -w 1000000-1000999999 root
-sudo incus config set core.https_address=127.0.0.1:8443
+incus config set core.https_address=127.0.0.1:8443
+incus remote add docker https://docker.io --protocol=oci
 
 echo "Set hibernation conf"
 sudo mkdir /etc/systemd/sleep.conf.d
