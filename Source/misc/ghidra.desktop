@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Ghidra
+Comment=A decompiler for reverse engineering
+Exec=ghidra
+Icon=/opt/ghidra/docs/images/GHIDRA_1.png
+Terminal=false
+Type=Application
+Categories=Development;

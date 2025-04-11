@@ -98,3 +98,6 @@ sudo cp "${scrDir}/../Source/misc/sleep.conf" /etc/systemd/sleep.conf.d/
 
 echo "Add thunderbolt to early module loading. You need to sudo mkinitcpio -P"
 sudo sed -i 's/\(MODULES=(.*\))/\1 thunderbolt)/' /etc/mkinitcpio.conf
+
+echo "Add Ghidra desktop shortcut"
+cp "${scrDir}/../Source/misc/ghidra.desktop" "$HOME/.local/share/applications/ghidra.desktop"

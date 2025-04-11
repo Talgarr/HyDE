@@ -46,6 +46,8 @@ ripgrep|neovim
 fd|neovim
 unzip|neovim
 lazygit|neovim
+mono|neovim
+dotnet-sdk-8.0-bin|neovim
 
 texlive-full                                           # Latex
 zathura
