@@ -32,6 +32,7 @@ mangohud                                               # system performance over
 
 # --------------------------------------------------- // Media
 cava                                                   # audio visualizer
+noise-suppression-for-voice
 spotify                                                # proprietary music streaming service
 spicetify-cli                                          # cli to customize spotify client
 vlc
@@ -83,6 +84,8 @@ pam-u2f
 
 libfprint                                             # Fingerprint
 fprintd
+
+tpm2-tss                                              # TPM
 
 wireguard-tools                                       # VPN
 openvpn
@@ -167,3 +170,6 @@ sqlmap
 bind
 ffuf
 ngrok
+
+# --------------------------------------------------- // Productivity
+libreoffice-still
