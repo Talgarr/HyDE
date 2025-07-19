@@ -19,6 +19,8 @@ tmux
 fzf
 bat
 bolt
+gvfs
+gvfs-dnssd
 
 # --------------------------------------------------- // Misc
 xdg-desktop-portal-gtk                                 # xdg desktop portal using gtk
@@ -79,7 +81,7 @@ thermald|auto-cpufreq
 
 # --------------------------------------------------- // Security
 yubikey-manager                                       # Yubikey
-yubikey-full-disk-encryption 
+# yubikey-full-disk-encryption 
 pam-u2f
 
 libfprint                                             # Fingerprint
@@ -98,6 +100,8 @@ aws-cli
 azure-cli
 google-cloud-cli
 github-cli
+git-lfs
+gemini
 
 # --------------------------------------------------- // 
 gimp
@@ -113,6 +117,8 @@ obsidian
 slack-desktop
 nextcloud-client
 zoom
+seafile-client
+seadrive-gui
 
 dbeaver
 remmina
@@ -145,6 +151,8 @@ rustrover
 # code                                                   # VS Code
 android-studio
 
+hyperfine
+
 # --------------------------------------------------- // Red Team - CTF
 # Blackarch maybe...
 impacket
@@ -170,6 +178,7 @@ sqlmap
 bind
 ffuf
 ngrok
+checksec
 
 # --------------------------------------------------- // Productivity
 libreoffice-still

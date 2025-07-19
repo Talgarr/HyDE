@@ -13,5 +13,8 @@ alias icat='kitten icat'
 
 #  This is your file 
 # Add your configurations here
+
 export EDITOR="nvim"
-export PATH=$PATH:"/home/talgarr/go/bin/"
+export PATH=$PATH:"/home/talgarr/go/bin/":"/home/talgarr/.cargo/bin/":"/home/talgarr/.cache/.bun/bin"
+
+export AVANTE_GEMINI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
